@@ -1,0 +1,14 @@
+
+div.newsbox {
+	margin: 0em;
+	padding: 1em;
+	border-bottom: 5px solid black;
+}
+
+div.newsbox h3 {
+	font-size: 2em;
+}
+
+div.newsbox p {
+	padding: 2em;
+}
