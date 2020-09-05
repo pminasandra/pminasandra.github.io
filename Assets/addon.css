@@ -144,6 +144,7 @@ img#iiscpic{
 	}
 	div.nav ol li {
 		width: 32%;
+		background-color: blue;
 	}
 
 }
