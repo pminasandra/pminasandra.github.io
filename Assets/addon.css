@@ -101,10 +101,10 @@ a.currentlink {
 }
 
 img#iiscpic{
-	width: 50%;
+	width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	html, p{
 	line-height: 3em;
 	}
