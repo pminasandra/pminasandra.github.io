@@ -31,10 +31,11 @@
 	font-style: italic;
 }*/
 
-html, body, h1, p, ul, ol, li {
+html, body, h1, p, ul, ol, li, a {
 	line-height:1.5em;
 	font-family: 'ComputerModern', 'Lusitana', Times, serif;
 	font-weight: normal;
+	background-color: white!important;
 }
 
 h2 {

@@ -1,0 +1,31 @@
+div.projectbox {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 5px solid black;
+	padding-bottom:1.5em;
+}
+
+.col {
+	margin: 0em;
+}
+
+.projectbox .col {
+	width:32%;
+	align-items: stretch;
+}
+
+.projectbox .text {
+	color: black;
+	text-decoration: none;
+	link-decoration-color: white;
+}
+
+.text {
+	flex: 2;
+}
+
+.image {
+	flex: 1;
+	padding-left:1em;
+	margin-top:2em;
+}
