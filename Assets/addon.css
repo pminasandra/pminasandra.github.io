@@ -138,5 +138,9 @@ img#iiscpic{
 	padding: 20%;
 	padding-top: 5em;
 	}
+	
+	div.nav ol li {
+		width: 32%;
+	}
 
 }
