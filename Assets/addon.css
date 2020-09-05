@@ -105,7 +105,7 @@ img#iiscpic{
 	width: 100%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 980px) {
 	html, p{
 	line-height: 3em;
 	}
@@ -122,6 +122,7 @@ img#iiscpic{
 	body p {
 	margin: 0em 0em;
 	text-width: 100%;
+	background-color: red;
 	}
 
 	div#maincontainer {
@@ -139,12 +140,20 @@ img#iiscpic{
 	padding-top: 5em;
 	}
 	
-	div.nav ol {
-		flex: wrap;
+	.nav ol {
+		flex-flow: row wrap!important;
+		align-content: flex-start;
 	}
-	div.nav ol li {
-		width: 32%;
-		background-color: blue;
+	.nav ol li {
+		padding: 2em 0em;
+		flex: row wrap!important;
+		width: 32%!important;
+	}
+
+	.nav ol li a {
+		width: 32%!important;
+		flex: row wrap!important;
+		font-size: 2em!important;
 	}
 
 }
