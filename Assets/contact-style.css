@@ -1,0 +1,25 @@
+.optionsbox {
+	display:flex;
+	flex-flow: row;
+	margin-top:2em;
+}
+
+.option1 {
+	flex:2;
+	margin-right:2em;
+}
+
+.option2 {
+	flex:1;
+}
+
+@media only screen and (max-width: 980px) {
+ .optionsbox{
+		flex-flow: column!important;
+	}
+
+	.option1 {
+	margin-right: 0%;
+	padding-bottom: 2em;
+	}
+}

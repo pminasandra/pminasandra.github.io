@@ -1,5 +1,6 @@
 div.projectbox {
 	display: flex;
+	flex-flow:row;
 	justify-content: space-between;
 	border-bottom: 5px solid black;
 	padding-bottom:1.5em;
@@ -9,8 +10,7 @@ div.projectbox {
 	margin: 0em;
 }
 
-.projectbox .col {
-	width:32%;
+.projectbox {
 	align-items: stretch;
 }
 
@@ -28,4 +28,21 @@ div.projectbox {
 	flex: 1;
 	padding-left:1em;
 	margin-top:2em;
+}
+
+@media only screen and (max-width: 980px) {
+	div.projectbox {
+		flex-flow:column!important;
+	}
+
+	.image {
+		padding-left: 0%;
+		text-align: center;
+		padding-right:2%;
+		width: 100%;
+	}
+
+	h3 {
+		text-size: 2em!important;
+	}
 }

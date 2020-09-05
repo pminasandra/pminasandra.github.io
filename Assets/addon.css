@@ -32,7 +32,6 @@
 }*/
 
 html, body, h1, p, ul, ol, li, a {
-	line-height:1.5em;
 	font-family: 'ComputerModern', 'Lusitana', Times, serif;
 	font-weight: normal;
 	background-color: white!important;
@@ -117,6 +116,11 @@ img#iiscpic{
 
 	img {
 	margin: 1em 1em;
+	}
+
+	h2 {
+	font-size: 2em;
+	bottom-padding: 0.75em;
 	}
 
 	body p {

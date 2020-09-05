@@ -6,9 +6,25 @@ div.newsbox {
 }
 
 div.newsbox h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 div.newsbox p {
 	padding: 2em;
+}
+
+@media only screen and (max-width: 980px) {
+	.newsbox h3 {
+		font-size: 2em!important;
+		padding: 1em 0em;
+	}
+
+	.newsbox p {
+		padding: 0em!important;
+	}
+
+	.newsbox {
+		padding: 0em!important;
+		padding-bottom: 2em!important;
+	}
 }
