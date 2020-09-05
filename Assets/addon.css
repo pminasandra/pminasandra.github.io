@@ -139,8 +139,10 @@ img#iiscpic{
 	padding-top: 5em;
 	}
 	
+	div.nav ol {
+		flex: wrap;
+	}
 	div.nav ol li {
-		flex: row wrap;
 		width: 32%;
 	}
 
