@@ -123,10 +123,9 @@ img#iiscpic{
 	bottom-padding: 0.75em;
 	}
 
-	body p {
-	margin: 0em 0em;
+	p {
+	margin: 1em 0em;
 	text-width: 100%;
-	background-color: red;
 	}
 
 	div#maincontainer {
