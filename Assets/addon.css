@@ -51,6 +51,7 @@ em {
 
 h1 {
 	font-size: 3em;
+	word-spacing: 0.2em;
 }
 
 div.nav {
@@ -105,58 +106,74 @@ img#iiscpic{
 }
 
 @media only screen and (max-width: 980px) {
+	html {
+		max-width: 96%;
+		width: 96%;
+		margin: 2%;
+	}
+
+	body{
+		width: 100%;
+	}
+
 	html, p{
-	line-height: 3em;
+		line-height: 1.3em;
 	}
 
 	h1 {
-	font-size: 3.5em;
-	padding: 0.5em 0;
+		max-width: 100%;
+		font-size: 2em;
+		padding: 0.5em 0;
 	}
 
 	img {
-	margin: 1em 1em;
+		max-width: 100%;
 	}
 
 	h2 {
-	font-size: 2em;
-	bottom-padding: 0.75em;
+		font-size: 1.5em;
+		bottom-padding: 0.75em;
 	}
 
 	p {
-	margin: 1em 0em;
-	text-width: 100%;
+		margin: 1em 0em;
+		max-width: 100%;
 	}
 
 	div#maincontainer {
-	flex-flow: column;
+		flex-flow: column;
 	}
 
 	div#intro-text {
-	flex: 1;
+		flex: 1;
 	}
 
 	div#intro-img {
-	flex: 1;
-	margin-top:0em;
-	padding: 20%;
-	padding-top: 5em;
+		float: none;
+		text-align: center;
+		flex: 1;
+		margin-top:0em;
+		padding: 2em 2em 0em 2em;
 	}
 	
 	.nav ol {
+		justify-content: center;
+		max-width: 95%;
 		flex-flow: row wrap!important;
 		align-content: flex-start;
 	}
 	.nav ol li {
-		padding: 2em 0em;
+		text-align: center;
+		padding: 1em 0em!important;
 		flex: row wrap!important;
 		width: 32%!important;
 	}
 
 	.nav ol li a {
+		font-size: 1.4em;
 		width: 32%!important;
 		flex: row wrap!important;
-		font-size: 2em!important;
+		font-size: 1em!important;
 	}
 
 }
