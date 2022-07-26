@@ -105,6 +105,19 @@ img#iiscpic{
 	width: 100%;
 }
 
+footer {
+	max-width: 50%;
+	style: italic;
+	font-size: 6pt;
+	margin:auto;
+	margin-top: 20pt;
+	border: solid 1px black;
+	text-align: center;
+}
+
+strike {
+	text-decoration: solid 1px red line-through;
+}
 @media only screen and (max-width: 980px) {
 	html {
 		max-width: 96%;
@@ -176,4 +189,7 @@ img#iiscpic{
 		font-size: 1em!important;
 	}
 
+	footer {
+		max-width: 100%
+	}
 }
