@@ -1,0 +1,6 @@
+source: _blog_posts
+layouts_dir: layouts
+destination: reviews
+url: https://pminasandra.github.io/reviews
+baseurl: /reviews
+permalink: date

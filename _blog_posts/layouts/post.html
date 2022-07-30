@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/Assets/blog.css">
+
+<h1 class="post-title">{{ page.title }}</h1>
+<h1 class="post-author">Reviewed by {{ page.author  }}</h1> 
+<h1 class="post-date">{{ page.date | date_to_string  }}</h1>
+
+<img src="{{ page.img }}" class="post-cover">
+
+{{ content }}

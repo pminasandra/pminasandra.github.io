@@ -1,0 +1,36 @@
+---
+layout: default
+title: Reviews
+---
+<link rel="stylesheet" href="/Assets/blog-landing.css">
+
+<h2> What is this? </h2>
+<p>
+<em>Reviews</em> is a very old blogging initiative, staggering and barely hanging on as I have changed websites time and again.
+Most of my old reviews are now gone, lost over data crashes and website deactivations and what not.
+This text-only version ensures that that will never happen again.
+<em>Reviews</em> is now a simple blog with not many bells and whistles. It is powered by <a href="https://jekyllrb.com" target="_BLANK">Jekyll</a>.
+</p>
+
+<p>
+Here are the blog posts available now:
+</p>
+
+<div class="all-blog-posts">
+	{% for post in site.posts %}
+		<div class="blogpost-box">
+			<div class="some-container">
+			<span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span>
+			<span class="blog-date">{{ post.author }} | {{ post.date | date_to_string}}</span>
+			</div>
+			<div class="blogpost-box-text">
+				<p class="blog-excerpt">{{ post.excerpt }}</p>
+				<!--<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>--!>
+				 <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a>
+			</div>
+			<div class="blogpost-box-image">
+				<img src="{{ post.img }}">
+			</div>
+		</div>
+	{% endfor %}
+</div>
