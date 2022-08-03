@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /Assets/
+
+User-agent: Twitterbot
+Disallow: /Assets/
