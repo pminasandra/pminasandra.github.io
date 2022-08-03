@@ -3,36 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
 
-@font-face{
-	font-family: 'ComputerModern';
-	src: 'Fonts/cmunrm.ttf';
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: 'ComputerModern';
-	src: 'Fonts/cmunbx.ttf';
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face{
-	font-family: 'ComputerModern';
-	src: 'Fonts/cmunsl.ttf';
-	font-weight: 400;
-	font-style: italic;
-}
-
-/*@font-face{
-	font-family: 'ComputerModern';
-	src: 'Fonts/cmunci.ttf';
-	font-weight: 400;
-	font-style: italic;
-}*/
 
 html, body, h1, p, ul, ol, li, a {
-	font-family: 'ComputerModern', 'Lusitana', Times, serif;
+	font-family: 'Lusitana', Times, serif;
 	font-weight: normal;
 	background-color: white!important;
 }
@@ -40,11 +13,11 @@ html, body, h1, p, ul, ol, li, a {
 h2 {
 	font-size: 1.5em;
 	font-weight: 700;
-	font-family: 'ComputerModern', 'Lusitana', Times;
+	font-family: 'Lusitana', Times;
 }
 
 em {
-	font-family: 'ComputerModern', 'Lusitana', Times;
+	font-family: 'Lusitana', Times;
 	font-style: italic;
 	font-weight: 400;
 }
