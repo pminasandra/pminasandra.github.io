@@ -79,7 +79,7 @@ a.currentlink {
 	border-right: 5px solid black;
 }
 
-img#iiscpic{
+img.placepic {
 	width: 100%;
 }
 
@@ -91,6 +91,10 @@ footer {
 	margin-top: 20pt;
 	border: solid 1px black;
 	text-align: center;
+}
+
+img.species {
+  width: 33%;
 }
 
 strike {
@@ -170,4 +174,8 @@ strike {
 	footer {
 		max-width: 100%
 	}
+
+  img.species {
+    width: 100%;
+  }
 }
