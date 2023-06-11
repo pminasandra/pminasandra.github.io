@@ -97,6 +97,15 @@ img.species {
   width: 33%;
 }
 
+.myspecies {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.fiftywidth {
+  width: 50%;
+}
+
 strike {
 	text-decoration: solid 1px #aa0000 line-through;
 }
@@ -172,10 +181,19 @@ strike {
 	}
 
 	footer {
-		max-width: 100%
+		max-width: 100%;
 	}
 
+  .myspecies {
+    display: flex;
+    flex-flow: column!important;
+  }
+
   img.species {
+    width: 100%;
+  }
+
+  .fiftywidth {
     width: 100%;
   }
 }
