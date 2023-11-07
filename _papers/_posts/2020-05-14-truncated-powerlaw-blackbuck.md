@@ -1,7 +1,9 @@
 ---
 layout: post
-author: "Pranav Minasandra, Kavita Isvaran"
+author: "Minasandra, P., and Isvaran, K."
 title: "Truncated power-law distribution of group sizes in antelope"
+journal: "Behaviour"
+volpages: "157(6)"
 publicationurl: "https://doi.org/10.1163/1568539x-bja10012"
 preprinturl: "https://doi.org/10.1101/411199"
 codeurl: "https://github.com/pminasandra/distribution-analyse"
@@ -13,6 +15,7 @@ been receiving attention. In this paper, we look at group size distributions in
 Blackbuck, a type of Indian antelope, and found that these groups are
 distributed with heavy tails. This is a special type of distribution, whose
 meaning we explore further."
+note: ""
 ---
 
 "Quantifying and understanding group size distributions can be useful for

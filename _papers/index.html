@@ -15,16 +15,25 @@ Here are the papers available now:
 	{% for post in site.posts %}
 		<div class="blogpost-box">
 			<div class="some-container">
-			<span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span>
+			<!--span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span--!>
 			<!--span class="blog-date">{{ post.author }} | {{ post.date | date_to_string}}</span--!>
+      <span class="blog-title">
+        <a href="{{ site.url }}{{ post.url }}">
+        <span class="authors">{{ post.author }} </span>
+        <span class="year">({{ post.date | date: "%Y" }}). </span>
+        <span class="title">{{ post.title }}. </span>
+        <span class="journal">{{ post.journal }}, </span>
+        <span class="volpages">{{ post.volpages }}. </span>
+        <span class="note">{{ post.note }}<span>
+        </a>
+      </span>
 			</div>
 			<div class="blogpost-box-text">
-				<p class="paper-keywords">{{ post.keywords }}</p>
 
-				 <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a>
 
       <div class="paper-links">
-        <p>{{ post.layabstract }} </p>
+        <p>{{ post.layabstract }}
+				 <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a></p>
         <ul class="links">
           <li> <a href="{{ post.publicationurl }}">publication</a>
           <li> <a href="{{ post.preprinturl }}">full text</a>

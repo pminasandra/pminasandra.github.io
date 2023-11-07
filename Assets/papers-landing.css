@@ -7,11 +7,31 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-top: 5px;
 }
 
 .paper-links ul.links li {
   flex: 1;
   text-align: center;
-  font-size: 7pt;
+  font-size: 10pt;
   margin: 0;
 }
+
+.blog-title a {
+  font-size: 12pt;
+  font-weight: normal;
+  color: #aa0000;
+}
+
+.blog-title .title {
+  font-weight: bold;
+}
+
+.blog-title .journal {
+  font-style: italic;
+}
+
+.blog-title .note {
+  color: darkgreen;
+}
+
