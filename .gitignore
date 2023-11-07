@@ -2,5 +2,7 @@ Gemfile
 _config.yaml
 _blog_posts
 _blog_posts/*
+_papers
+_papers/*
 discard
 discard/*
