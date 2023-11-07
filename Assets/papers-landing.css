@@ -12,5 +12,6 @@
 .paper-links ul.links li {
   flex: 1;
   text-align: center;
+  font-size: 7pt;
   margin: 0;
 }

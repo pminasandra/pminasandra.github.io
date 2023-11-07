@@ -6,6 +6,13 @@ publicationurl: "https://doi.org/10.1163/1568539x-bja10012"
 preprinturl: "https://doi.org/10.1101/411199"
 codeurl: "https://github.com/pminasandra/distribution-analyse"
 img: "/Assets/images/2020blackbuckpapercover._clip.jpg"
+keywords: "group size distributions; animal groups; power law; habitat openness; blackbuck"
+layabstract: "Animal groups can come together in many ways and for various
+purposes. The dynamics of group formation are exciting, and only recently have
+been receiving attention. In this paper, we look at group size distributions in
+Blackbuck, a type of Indian antelope, and found that these groups are
+distributed with heavy tails. This is a special type of distribution, whose
+meaning we explore further."
 ---
 
 "Quantifying and understanding group size distributions can be useful for
