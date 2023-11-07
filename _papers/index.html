@@ -1,0 +1,39 @@
+---
+layout: default
+title: Publications
+---
+<link rel="stylesheet" href="/Assets/blog-landing.css">
+<link rel="stylesheet" href="/Assets/papers-landing.css">
+
+<h2> Publications </h2>
+
+<p>
+Here are the papers available now:
+</p>
+
+<div class="all-blog-posts">
+	{% for post in site.posts %}
+		<div class="blogpost-box">
+			<div class="some-container">
+			<span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span>
+			<!--span class="blog-date">{{ post.author }} | {{ post.date | date_to_string}}</span--!>
+			</div>
+			<div class="blogpost-box-text">
+				<p class="paper-keywords">{{ post.keywords }}</p>
+
+				 <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a>
+
+      <div class="paper-links">
+        <ul class="links">
+          <li> <a href="{{ post.publicationurl }}">publication</a>
+          <li> <a href="{{ post.preprinturl }}">full text</a>
+          <li> <a href="{{ post.codeurl }}">code</a>
+        </ul>
+      </div>
+			</div>
+			<div class="blogpost-box-image">
+				<img src="{{ post.img }}">
+			</div>
+		</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,16 @@
+.blogpost-box-text .paper-keywords {
+  font-style: italic;
+}
+
+.paper-links ul.links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.paper-links ul.links li {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
