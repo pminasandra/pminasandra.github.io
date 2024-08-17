@@ -1,4 +1,4 @@
-fetch('/navbar.html')
+fetch('/navbar')
 .then(response => response.text())
 .then(data => {
   document.getElementById('navbar').innerHTML = data;
@@ -9,4 +9,3 @@ fetch('/navbar.html')
     document.getElementById('home').classList.add('currentlink');
   }
 });
-

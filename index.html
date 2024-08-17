@@ -4,6 +4,10 @@
 <title>Pranav Minasandra</title>
 <link rel="stylesheet" href="https://latex.now.sh/style.css">
 <link rel="stylesheet" href="/Assets/addon.css">
+<link rel="stylesheet" href="/Assets/landing.css">
+
+<script src="/Scripts/populate-navbar.js" defer></script>
+<script src="/Scripts/populate-footer.js" defer></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -21,38 +25,79 @@ padding-top: 50px;
 </head>
 
 <body>
-<header>
-<h1 class="title">Pranav Minasandra</h1>
-</header>
 <div id="navbar"></div>
 
-<script src="/Scripts/populate-navbar.js" defer></script>
-
 <main>
+<h2> Pranav Minasandra, PhD</h2>
 <div id="maincontainer">
 <div id="intro-text">
-<h2> Hello there! </h2>
-<p>
-Welcome to this website!
-I am a PhD researcher at the Max Planck Institute for Animal Behaviour.
-My research interests are in animal behaviour, looking at aspects of behaviour through <em>theoretical, data-driven, and computational</em> approaches.
-</p>
 
-<p>
-You are probably looking for my <a href="/Assets/files/PranavMinasandra_CV.pdf" target="_blank">CV</a> or my <a href="https://scholar.google.com/citations?user=oYVY--gAAAAJ&hl=en&oi=ao" target="_blank">List of publications</a>
-</p>
 
+<table class="borders-custom intro-table">
+  <tr>
+    <th>Focus</th>
+    <td>
+    <div class="content">
+    Multiscale nature of animal behaviour in the wild.
+    </div>
+</td>
+  </tr>
+  <tr>
+    <th>Position</th>
+    <td>
+    <div class="content">
+    Postdoctoral researcher.
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <th>Skills</th>
+    <td>
+    <div class="content">
+    Accelerometric behaviour inference; long-timescale models; expertise with Python.
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <th>Based at</th>
+    <td>
+    <div class="content">
+    <a href="https://ab.mpg.de" target="_blank">Max Planck Institute of Animal Behavior.</a>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <th>Quick links</th>
+    <td>
+    <div class="content">
+        <ul>
+        <li><a href="/Assets/files/PranavMinasandra_CV.pdf" target="_blank">CV.</a></li>
+        <li><a href="https://scholar.google.com/citations?user=oYVY--gAAAAJ&hl=en&oi=ao" target="_blank">Publications.</a></li>
+        <li><a href="https://www.github.com/pminasandra" target="_blank">GitHub.</a></li>
+        <li><a href="https://www.twitter.com/PMinasandra" target="_blank">Twitter.</a></li>
+        </ul>
+    </div>
+    </td>
+  </tr>
+</table>
 </div>
 <div id="intro-img">
-<p><img id="myface" src="/Assets/images/face.jpg" alt="my face" height="100%"/></p>
+<img id="myface" src="/Assets/images/face.jpg" alt="my face" height="100%"/>
 </div>
 </div>
-<h4>Some other useful stuff</h4>
+
+<!--
+<h4>Resources</h4>
+The below resources may be useful to you. As of now, they are all in progress.
 <ul>
+  <li> <a href="/resources/git_tutorial.pdf">Non-programmers' introduction to Git.</a></li>
+  <li> <a href="/resources/github_tutorial.pdf">Non-programmers' introduction to GitHub.</a></li>
+  <li> <a href="/resources/vedba.pdf">A brief introduction to the use of VeDBA.</a></li>
 	<li> <a href="movies">Movie night at Bücklestraße</a>
 </ul>
+--!>
 </main>
-<footer>This is an ad-free and tracker-free website. No data is collected or retained from any users.<br>© Pranav Minasandra, 2020. All Rights Reserved.</footer>
+<footer id="footer"></footer>
 </body>
 </html>
 
