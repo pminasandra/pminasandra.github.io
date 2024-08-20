@@ -1,0 +1,11 @@
+section ol h5 {
+  margin-top: 1.4ex;
+  margin-bottom: 0.35ex;
+}
+
+.careertable {
+  border: 0px !important;
+}
+
+@media only screen and (max-width: 980px) {
+}

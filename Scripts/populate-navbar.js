@@ -6,6 +6,6 @@ fetch('/navbar')
   if (currentPage) {
     document.getElementById(currentPage).classList.add('currentlink');
   } else {
-    document.getElementById('home').classList.add('currentlink');
+    document.getElementById("home").classList.add('currentlink');
   }
 });
