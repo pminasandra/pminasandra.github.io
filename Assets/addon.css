@@ -299,4 +299,8 @@ div.nav::after, div.nav::before {
   div.heading::after {
     flex: 1;
   }
+
+  h2.heading {
+    text-align: center;
+  }
 }
