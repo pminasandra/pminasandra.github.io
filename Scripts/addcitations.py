@@ -28,7 +28,7 @@ CITATION_HTML = """<div class="citation">
 
 bibentries = open('Resources/mypapers.bib').read()
 MYPAPERS = bibtexparser.bparser.parse(bibentries).entries
-MYPAPERS = {entry['ID']: entry for entry in mypapers}
+MYPAPERS = {entry['ID']: entry for entry in MYPAPERS}
 
 def pretty_author_name(name):
     lastname = name.split(',')[0]
@@ -149,8 +149,8 @@ def replace_citations(html_text, citations, filename):
 
 
 def recursive_add_citations(dirname="."):
-    current_dir = os.getcwd()
     os.chdir(dirname)
+    current_dir = os.getcwd()
     available_htmls = [f for f in os.listdir() if f.endswith('.html')]
     for htmlfile in available_htmls:
         with open(htmlfile) as htf:
@@ -167,8 +167,8 @@ def recursive_add_citations(dirname="."):
 
     available_dirs = [f for f in os.listdir() if os.path.isdir(f)]
     for dir_ in available_dirs:
-        print(f"Processinf directory: {dir_}")
-        recursive_add_citations(dirname=dir_)
+        print(f"Processing directory: {dir_}")
+        recursive_add_citations(dirname=os.path.join(current_dir, dir_))
 
 
 if __name__ == "__main__":
