@@ -1,0 +1,36 @@
+
+.citation .author {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.citation .author::after {
+  content: ', ';
+}
+
+.citation .author .special-author {
+  font-weight: 500;
+}
+
+.citation .title {
+  font-weight: 600;
+}
+
+.citation .title::after {
+  content: '. ';
+}
+
+.citation .journal {
+  font-style: italic;
+}
+
+.citation .journal::after {
+  content: ', '
+}
+
+.citation .number {
+  font-weight: 600;
+}
+
+.citation .year::after {
+  content: '. ';
+}
