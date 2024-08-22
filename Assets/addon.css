@@ -2,6 +2,7 @@
 /* Written by Pranav Minasandra, Sep 4 2020 */
 
 /*@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');*/
+@import url('/Assets/citation.css');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body, p, ul, ol, li, a {
@@ -155,6 +156,21 @@ p {
   margin-bottom: 0.75em;
 }
 
+.imagecontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  vertical-align: center;
+}
+
+.imagecontainer .imageelem {
+  flex: 1;
+  width: 50%;
+  padding: 0px;
+  object-fit: cover;
+}
+
 /*Section styling 19.08.2024*/
 
 div.heading {
@@ -184,6 +200,21 @@ div.heading::before {
   width: 3ex;
   height: 4px;
   background-color: var(--link-visited); /* Accent color */
+}
+
+.imagecontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  vertical-align: center;
+}
+
+.imagecontainer .imageelem {
+  flex: 1;
+  width: 50%;
+  padding: 0px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 980px) {
@@ -302,5 +333,20 @@ div.nav::after, div.nav::before {
 
   h2.heading {
     text-align: center;
+  }
+
+  .imagecontainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    vertical-align: center;
+  }
+
+  .imagecontainer .imageelem {
+    flex: 1;
+    width: 100%;
+    padding: 0px;
+    object-fit: cover;
   }
 }
