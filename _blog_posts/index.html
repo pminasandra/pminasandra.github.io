@@ -4,11 +4,12 @@ title: Reviews
 ---
 <link rel="stylesheet" href="/Assets/blog-landing.css">
 
-<h2> What is this? </h2>
 <p>
-<em>Reviews</em> is a very old blogging initiative, staggering and barely hanging on as I have changed websites time and again.
-Most of my old reviews are now gone, lost over data crashes and website deactivations and what not.
-This text-only version ensures that that will never happen again.
+<em>Reviews</em> is my blog.
+This is a way for me to express my more random, unconnected thoughts.
+Since these thoughts are always expressed alongside a book or paper I read recently, I am less likely to be talking completely unsubstantiated bunk.
+I review whatever I read that I think you might also find interesting, however this must not be constituted as an endorsement of the philosophies or
+beliefs of the content I am reviewing.
 <em>Reviews</em> is now a simple blog with not many bells and whistles. It is powered by <a href="https://jekyllrb.com" target="_BLANK">Jekyll</a>.
 </p>
 
@@ -17,20 +18,27 @@ Here are the blog posts available now:
 </p>
 
 <div class="all-blog-posts">
-	{% for post in site.posts %}
-		<div class="blogpost-box">
-			<div class="some-container">
-			<span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span>
-			<span class="blog-date">{{ post.author }} | {{ post.date | date_to_string}}</span>
-			</div>
-			<div class="blogpost-box-text">
-				<p class="blog-excerpt">{{ post.excerpt }}</p>
+  {% assign post_counter = 0 %}
+  {% for post in site.posts %}
+    {% assign post_counter = post_counter | plus: 1 %}
+    <div class="blogpost-box{% if post_counter > 3 %} initial-hidden hidden{% endif %}">
+      <div class="some-container">
+        <span class="blog-title"><p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p></span>
+        <span class="blog-date">{{ post.author }} | {{ post.date | date_to_string }}</span>
+      </div>
+      <div class="blogpost-box-text">
+        <p class="blog-excerpt">{{ post.excerpt }}</p>
+        <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a>
+      </div>
+      <div class="blogpost-box-image">
+        <a href="{{ site.url }}{{ post.url }}">
+        <img src="{{ post.img }}"></a>
+      </div>
+    </div>
+  {% endfor %}
 
-				 <a href="{{ site.url }}{{ post.url }}" class="readmore">Read more...</a>
-			</div>
-			<div class="blogpost-box-image">
-				<img src="{{ post.img }}">
-			</div>
-		</div>
-	{% endfor %}
+<div class="buttoncontainer">
+  <button id="load-more">Load older posts</button>
 </div>
+</div>
+

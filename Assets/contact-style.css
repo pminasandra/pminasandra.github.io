@@ -5,12 +5,12 @@
 }
 
 .option1 {
-	flex:2;
+	flex:3;
 	margin-right:2em;
 }
 
 .option2 {
-	flex:1;
+	flex:;
 }
 
 @media only screen and (max-width: 980px) {

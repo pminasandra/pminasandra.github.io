@@ -1,7 +1,16 @@
+.some-container {
+  width: 100%;
+}
+
 
 .blog-title {
 	font-weight: bold;
 	font-size: 14pt;
+  margin-bottom: 0px;
+}
+
+.blog-title a, p {
+  margin-bottom: 0px;
 }
 
 .blog-title a {
@@ -29,19 +38,24 @@
 }
 
 .blogpost-box-text {
-	width: 80%;
+  flex: 4;
 	text-align: left;
 	padding-right:0.5em;
 }
 
 .blogpost-box-image {
+  flex: 1;
+  position: relative;
 	padding-left: 0.5em;
-	width: 20%;
+  display: inline-block;
 	text-align: right;
+  vertical-align: center;
 }
 
 .blogpost-box-image img {
 	width: 100%;
+  height: auto;
+  display: block;
 }
 
 .all-blog-posts {
@@ -51,6 +65,58 @@
 	padding-top: 0em;
 	border-top: solid 5px black;
 }
+
+.blogpost-box.hidden {
+  visibility: hidden;
+  height: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.buttoncontainer {
+  position: relative;
+  text-align: right;
+}
+
+#load-more{
+  margin: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--link-visited);
+  border: none;
+  cursor: pointer;
+}
+
+#load-more::after{
+  content: ' »';
+  text-decoration: none;
+}
+
+#load-more:disabled {
+  text-decoration: none;
+  margin-right: calc(5px + 0.3em);
+  color: #666666; /* Darker gray text */
+  cursor: not-allowed; /* Show not-allowed cursor */
+}
+
+#load-more::disabled::after{
+  content: ''!important;
+}
+
+/* Animated hidden state */
+.blogpost-box.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Visible state with animation */
+.blogpost-box.unhidden {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 0.5s ease-in-out; /* Animate when 'hidden' is removed */
+}
+
 
 @media only screen and (max-width: 980px) {
 	.blogpost-box {
