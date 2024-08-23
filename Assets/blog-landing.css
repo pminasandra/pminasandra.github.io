@@ -107,6 +107,9 @@
 .blogpost-box.hidden {
   opacity: 0;
   transform: translateY(20px);
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 /* Visible state with animation */
