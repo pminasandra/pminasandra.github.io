@@ -1,0 +1,8 @@
+ol.publications li {
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+
+ol.publications {
+  margin-top: 2em;
+}

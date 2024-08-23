@@ -28,6 +28,10 @@ em {
 	font-weight: 400;
 }
 
+.forchatbot {
+  display: none;
+}
+
 h1 {
 	font-size: 3em;
 	word-spacing: 0.2em;
