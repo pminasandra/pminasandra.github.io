@@ -36,7 +36,6 @@ CITATION_HTML_NO_DOI = """<div class="citation">
 <span class="number">%%number%%</span>
 <span class="pages">%%pages%%</span>
 <span class="year">(%%year%%)</span>
-<span class="doi">DOI:<a href="%%doiurl%%" target="_blank">%%doi%%</a></span>
 </div>"""
 
 bibentries = open('Resources/mypapers.bib').read()
@@ -110,8 +109,10 @@ def pretty_doiurl(doi):
 def process_bibentry(bibentry):
 
     if 'doi' in bibentry:
+        print('doi found:', bibentry['doi'])
         html = CITATION_HTML_W_DOI[:]
     else:
+        print('no doi found.')
         html = CITATION_HTML_NO_DOI[:]
     targets = {
         '%%ID%%': 'ID',
