@@ -17,7 +17,18 @@ SPECIAL_AUTHOR_NAME = "Minasandra, Pranav"
 SPECIAL_AUTHOR_HTML="""<span class="special-author">%%name%%</span>"""
 MAX_AUTHORS = 4
 
-CITATION_HTML = """<div class="citation">
+CITATION_HTML_W_DOI = """<div class="citation">
+<a name="%%ID%%"></a>
+<span class="author">%%authorlist%%</span>
+<span class="title">%%title%%</span>
+<span class="journal">%%journal%%</span>
+<span class="number">%%number%%</span>
+<span class="pages">%%pages%%</span>
+<span class="year">(%%year%%)</span>
+<span class="doi">DOI:<a href="%%doiurl%%" target="_blank">%%doi%%</a></span>
+</div>"""
+
+CITATION_HTML_NO_DOI = """<div class="citation">
 <a name="%%ID%%"></a>
 <span class="author">%%authorlist%%</span>
 <span class="title">%%title%%</span>
@@ -97,7 +108,11 @@ def pretty_doiurl(doi):
         return 'https://doi.org/' + doi
 
 def process_bibentry(bibentry):
-    html = CITATION_HTML[:]
+
+    if 'doi' in bibentry:
+        html = CITATION_HTML_W_DOI[:]
+    else:
+        html = CITATION_HTML_NO_DOI[:]
     targets = {
         '%%ID%%': 'ID',
         '%%title%%': 'title',
