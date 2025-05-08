@@ -24,7 +24,7 @@ CITATION_HTML_W_DOI = """<div class="citation">
 <span class="journal">%%journal%%</span>
 <span class="number">%%number%%</span>
 <span class="pages">%%pages%%</span>
-<span class="year">(%%year%%)</span>
+<span class="year">%%year%%</span>
 <span class="doi">DOI:<a href="%%doiurl%%" target="_blank">%%doi%%</a></span>
 </div>"""
 
@@ -35,7 +35,7 @@ CITATION_HTML_NO_DOI = """<div class="citation">
 <span class="journal">%%journal%%</span>
 <span class="number">%%number%%</span>
 <span class="pages">%%pages%%</span>
-<span class="year">(%%year%%)</span>
+<span class="year">%%year%%</span>
 </div>"""
 
 bibentries = open('Resources/mypapers.bib').read()
@@ -106,14 +106,20 @@ def pretty_doiurl(doi):
     else:
         return 'https://doi.org/' + doi
 
+def pretty_year(year):
+    ystr = r'\(\d{4}\)'
+    if bool(re.fullmatch(ystr, year)):
+        return year
+    else:
+        return f"({year})"
+
 def process_bibentry(bibentry):
 
     if 'doi' in bibentry:
-        print('doi found:', bibentry['doi'])
         html = CITATION_HTML_W_DOI[:]
     else:
-        print('no doi found.')
         html = CITATION_HTML_NO_DOI[:]
+
     targets = {
         '%%ID%%': 'ID',
         '%%title%%': 'title',
@@ -128,7 +134,7 @@ def process_bibentry(bibentry):
 
     for target in targets:
         if targets[target] in bibentry:
-            if targets[target] not in ['author', 'doi', 'doiurl']:
+            if targets[target] not in ['author', 'doi', 'doiurl', 'year']:
                 html = html.replace(target, bibentry[targets[target]])
             else:
                 if targets[target] == 'author':
@@ -137,6 +143,8 @@ def process_bibentry(bibentry):
                     html = html.replace(target, pretty_doi(bibentry[targets[target]]))
                 elif target == '%%doiurl%%':
                     html = html.replace(target, pretty_doiurl(bibentry[targets[target]]))
+                elif target == '%%year%%':
+                    html = html.replace(target, pretty_year(bibentry[targets[target]]))
         else:
             html = html.replace(target, '')
 
