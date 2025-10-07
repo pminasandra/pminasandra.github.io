@@ -1,0 +1,124 @@
+body {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.webcomic {
+  margin: auto;
+  margin-top: 18pt;
+  text-align: center;
+  max-width: 200%;
+  padding: 12pt;
+  border: 1mm black solid;
+  border-radius: 5mm;
+}
+
+.webcomic .content {
+  margin: auto;
+  text-align: center;
+}
+
+.content .comic {
+  max-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.webcomic .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0em;
+  gap: 20px;
+}
+
+.banner {
+  margin: auto;
+  max-width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.controls li {
+  text-align: center;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:active {
+  filter: invert(1);
+}
+
+
+button {
+  text-align: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  border: none;
+  height: 22pt;
+  background-color: white;
+  margin: auto;
+  display: block;
+}
+
+.prev {
+  background-position: center;
+  background-image: url('/Assets/webcomic-assets/prev-button.png');
+  width: 6em;
+}
+
+.rand {
+  background-position: center;
+  background-image: url('/Assets/webcomic-assets/rand-button.png');
+  width: 6.54em;
+}
+
+.next {
+  background-position: center;
+  background-image: url('/Assets/webcomic-assets/next-button.png');
+  width: 6em;
+}
+
+.faqs {
+  font-size: 8pt;
+  text-align: left;
+}
+
+@media only screen and (max-width: 980px) {
+
+  .comictitle {
+    font-size: 12pt;
+  }
+
+  .webcomic {
+    padding: 0pt;
+  }
+
+  .banner {
+    max-width: 100%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  button {
+    background-size: 50%;
+    height: 14pt;
+  }
+
+  .prev {
+    width: 4em;
+  }
+
+  .rand {
+    width: 4.36em;
+  }
+
+  .next {
+    width: 4em;
+  }
+}
