@@ -11,7 +11,7 @@ const params = new URLSearchParams(window.location.search);
 const rawoutput = params.get("num");
 let desiredID = parseInt(rawoutput);
 
-const maxComicID = 19;
+const maxComicID = 24;
 let currentComicID;
 
 if (isNaN(desiredID) || desiredID < 1 || desiredID > maxComicID) {

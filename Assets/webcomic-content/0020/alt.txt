@@ -1,1 +1,2 @@
-X marks the spot
+As expected, the equation has no closed-form solutions
+
