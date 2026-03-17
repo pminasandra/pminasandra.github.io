@@ -13,7 +13,7 @@ import bibtexparser
 
 ## CONFIG
 SPECIAL_PMIN = True
-SPECIAL_AUTHOR_NAME = "Minasandra, Pranav"
+SPECIAL_AUTHOR_NAMES = ["Minasandra, Pranav", "Minasandra*, Pranav"]
 SPECIAL_AUTHOR_HTML="""<span class="special-author">%%name%%</span>"""
 MAX_AUTHORS = 4
 
@@ -84,7 +84,7 @@ def pretty_author_list(authors):
     for name in authorlist:
         newname = pretty_author_name(name)
         if SPECIAL_PMIN:
-            if name == SPECIAL_AUTHOR_NAME:
+            if name in SPECIAL_AUTHOR_NAMES:
                 newname = SPECIAL_AUTHOR_HTML.replace('%%name%%', newname)
         newlist.append(newname)
 
